@@ -2,9 +2,10 @@ from setuptools import setup
 
 setup(
     name="pyzabbix",
-    version="0.7.4",
+    version="0.7.5",
     install_requires=[
         "requests>=1.0",
+        "httpretty",
     ],
     description="Zabbix API Python interface",
     author="Luke Cyca",
@@ -25,7 +26,10 @@ setup(
         "Topic :: System :: Networking :: Monitoring",
         "Topic :: System :: Systems Administration",
     ],
-    packages=["pyzabbix"],
+    packages=[
+        "pyzabbix",
+        "pyzabbix.client",
+    ],
     tests_require=[
         "httpretty<0.8.7",
     ],

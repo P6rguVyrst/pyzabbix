@@ -1,4 +1,6 @@
 build
 dist/
-pyzabbix.egg-info/
-pyzabbix/*.pyc
+.pytest_cache/
+*.egg-info/
+*__pycache_/
+*.pyc
